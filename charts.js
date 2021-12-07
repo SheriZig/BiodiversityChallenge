@@ -120,7 +120,7 @@ function buildCharts(sample) {
     Plotly.newPlot("bar",barData,barLayout)
 
   //-------------------
-    //BUBBLE CHART
+    //BUBBLE CHART layout
   //-------------------
     //Create the trace for the bubble chart.
     var otuIds = firstSample.otu_ids
@@ -135,7 +135,7 @@ function buildCharts(sample) {
       marker: {
         color:otuIds,
         size:samplevalues, 
-        colorscale: 'Earth',
+        colorscale: 'Blues',
         type: 'scatter'
       }
     }];
